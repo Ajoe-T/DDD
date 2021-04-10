@@ -2,6 +2,11 @@ package com.tw.ddd.domain;
 
 public class Product {
     private String name;
+
+    public void setPrice(Price price) {
+        this.price = price;
+    }
+
     private Price price;
 
     public Product(String name, Price price) {
@@ -11,6 +16,10 @@ public class Product {
 
     public Price getPrice() {
         return price;
+    }
+
+    public String getName() {
+        return name;
     }
 }
 
